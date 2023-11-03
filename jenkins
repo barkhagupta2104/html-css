@@ -10,7 +10,7 @@ pipeline {
                     doGenerateSubmoduleConfigurations: false, 
                     extensions: [], 
                     submoduleCfg: [], 
-                    userRemoteConfigs: [[url: 'https://github.com/barkhagupta2104/Card-Project-Using-html-css.git']]
+                    userRemoteConfigs: [[url: 'https://github.com/barkhagupta2104/html-css.git']]
                 ])
             }
         }
@@ -19,7 +19,7 @@ pipeline {
             steps {
                 // Copy the code to the Apache document root directory
                 bat script: '''
-                    xcopy /s /e /y "E:\\Card" "C:\\Apache24\\htdocs"
+                    xcopy /s /e /y "E:\\Recipie" "C:\\Apache24\\htdocs"
                 '''
             }
         }
